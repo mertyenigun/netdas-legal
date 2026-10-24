@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Netdaş — Yasal</title>
+<meta name="description" content="Netdaş uygulamasının gizlilik politikası ve hesap silme bilgileri.">
+<style>
+  :root { --bg:#f8f9fa; --surface:#fff; --border:#e8ecef; --text:#1a1d23; --muted:#6b7280; --accent:#1fa89c; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#0f1115; --surface:#1a1d23; --border:#2a2e36; --text:#f3f4f6; --muted:#9ca3af; --accent:#4ed8cc;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--text); min-height:100vh;
+    display:flex; align-items:center; justify-content:center; padding:24px 16px;
+    font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .card { max-width:520px; width:100%; }
+  .brand { font-size:15px; font-weight:700; color:var(--accent); letter-spacing:.02em; }
+  h1 { font-size:28px; margin:10px 0 6px; }
+  .sub { color:var(--muted); margin:0 0 28px; }
+  a.row {
+    display:block; background:var(--surface); border:1px solid var(--border);
+    border-radius:12px; padding:16px 18px; margin-bottom:12px;
+    color:var(--text); text-decoration:none;
+  }
+  a.row:hover { border-color:var(--accent); }
+  a.row strong { display:block; margin-bottom:2px; }
+  a.row span { color:var(--muted); font-size:14px; }
+  footer { margin-top:24px; color:var(--muted); font-size:14px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="brand">Netdaş</div>
+  <h1>Yasal</h1>
+  <p class="sub">Netdaş uygulamasının gizlilik ve veri silme belgeleri.</p>
+
+  <a class="row" href="gizlilik.html">
+    <strong>Gizlilik Politikası</strong>
+    <span>Hangi verileri neden işliyoruz, kimlerle paylaşıyoruz</span>
+  </a>
+  <a class="row" href="hesap-silme.html">
+    <strong>Hesap Silme</strong>
+    <span>Hesabını ve verilerini kalıcı olarak nasıl silersin</span>
+  </a>
+
+  <footer>İletişim: <a href="mailto:destek@netdas.app">destek@netdas.app</a></footer>
+</div>
+</body>
+</html>

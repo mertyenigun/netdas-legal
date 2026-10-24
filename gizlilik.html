@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Netdaş — Gizlilik Politikası</title>
+<meta name="description" content="Netdaş uygulamasının hangi verileri neden işlediğini, kimlerle paylaştığını ve nasıl sildiğini açıklayan gizlilik politikası.">
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --surface: #ffffff;
+    --border: #e8ecef;
+    --text: #1a1d23;
+    --muted: #6b7280;
+    --accent: #1fa89c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1115; --surface: #1a1d23; --border: #2a2e36;
+      --text: #f3f4f6; --muted: #9ca3af; --accent: #4ed8cc;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 72px; }
+  header { margin-bottom: 32px; }
+  .brand { font-size: 15px; font-weight: 700; color: var(--accent); letter-spacing: .02em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 10px 0 8px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0; }
+  .intro {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px; margin: 28px 0 36px;
+  }
+  .intro p { margin: 0; }
+  h2 { font-size: 19px; margin: 36px 0 10px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 14px; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+  footer {
+    margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 14px;
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 32px 16px 56px; }
+    h1 { font-size: 25px; }
+    table, th, td { font-size: 14px; }
+    th, td { padding: 9px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">Netdaş</div>
+  <h1>Gizlilik Politikası</h1>
+  <p class="updated">Son güncelleme: 24 Ekim 2026</p>
+</header>
+
+<div class="intro">
+  <p>Netdaş olarak gizliliğine önem veriyoruz. Bu politika, Netdaş mobil uygulamasının
+  (iOS ve Android) hangi verileri hangi amaçla işlediğini, kimlerle paylaştığını, ne
+  kadar sakladığını ve bu veriler üzerinde hangi haklara sahip olduğunu açıklar.</p>
+</div>
+
+<h2>1. Topladığımız Veriler</h2>
+<p>Netdaş yalnızca uygulamanın çalışması için gereken verileri toplar:</p>
+<table>
+  <tr><th>Veri türü</th><th>İçerik</th></tr>
+  <tr>
+    <td><strong>Hesap bilgileri</strong></td>
+    <td>E-posta adresi, kullanıcı adı, görünen ad ve Apple ya da Google ile giriş
+    yaparken bu sağlayıcıların ilettiği kimlik bilgisi.</td>
+  </tr>
+  <tr>
+    <td><strong>Çalışma verileri</strong></td>
+    <td>Çalışma süresi, seçilen teknik, seri (streak), puan, hedef sınav, konu takibi
+    ve deneme kayıtları.</td>
+  </tr>
+  <tr>
+    <td><strong>Topluluk içeriği</strong></td>
+    <td>Paylaştığın gönderiler, yorumlar, oda sohbeti mesajları ve varsa yüklediğin
+    görseller.</td>
+  </tr>
+  <tr>
+    <td><strong>Cihaz ve kullanım bilgisi</strong></td>
+    <td>Uygulama sürümü, işletim sistemi, dil ve bildirim izni durumu gibi temel teknik
+    bilgiler; hata ayıklama ve bildirim gönderimi için.</td>
+  </tr>
+</table>
+<p><strong>Şifreni saklamayız.</strong> Kimlik doğrulama Supabase ve giriş yöntemine göre
+Apple veya Google tarafından yürütülür.</p>
+
+<h2>2. Verileri Nasıl Kullanıyoruz</h2>
+<ul>
+  <li>Hesabını oluşturmak ve oturumunu açık tutmak</li>
+  <li>Çalışma istatistiklerini, liderlik tablolarını ve Piko seri sistemini işletmek</li>
+  <li>Çalışma ve mola bildirimlerini göndermek</li>
+  <li>Topluluğu güvende tutmak: şikâyetleri incelemek, engelleme ve moderasyon</li>
+  <li>Hataları gidermek ve uygulamayı iyileştirmek</li>
+</ul>
+<p><strong>Verilerini satmayız</strong> ve reklam amacıyla üçüncü taraflara pazarlamayız.</p>
+
+<h2>3. Verileri Kimlerle Paylaşıyoruz</h2>
+<p>Verilerini yalnızca uygulamanın çalışması için gereken hizmet sağlayıcılarla, yalnızca
+gerektiği ölçüde paylaşırız:</p>
+<table>
+  <tr><th>Taraf</th><th>Amaç</th><th>Paylaşılan veri</th></tr>
+  <tr>
+    <td><strong>Supabase</strong></td>
+    <td>Altyapı, veritabanı ve kimlik doğrulama</td>
+    <td>Hesap bilgileri, çalışma verileri, topluluk içeriği</td>
+  </tr>
+  <tr>
+    <td><strong>Apple App Store / Google Play</strong></td>
+    <td>Abonelik ve uygulama içi satın alma işlemleri</td>
+    <td>Ödeme işlemi ilgili mağaza tarafından yürütülür; ödeme bilgilerini biz görmeyiz</td>
+  </tr>
+  <tr>
+    <td><strong>RevenueCat</strong></td>
+    <td>Abonelik durumunun doğrulanması</td>
+    <td>Abonelik durumu (aktif/pasif) ve mağaza tarafından verilen anonim kullanıcı kimliği</td>
+  </tr>
+  <tr>
+    <td><strong>Apple / Google</strong></td>
+    <td>"Apple ile Giriş" ve "Google ile Giriş"</td>
+    <td>Kimlik doğrulama jetonu ve izin verdiğin kadarıyla e-posta/ad</td>
+  </tr>
+</table>
+<p>Bu hizmetlerin kendi gizlilik politikaları geçerlidir. Bunların dışında verilerini,
+yasal bir yükümlülük veya kullanıcı güvenliğini koruma zorunluluğu olmadıkça üçüncü
+taraflarla paylaşmayız.</p>
+
+<h2>4. Abonelik Verileri</h2>
+<p>Netdaş+ satın aldığında ödeme bilgilerini (kart numarası vb.) <strong>biz görmeyiz</strong>;
+işlem iOS'ta Apple App Store, Android'de Google Play tarafından gerçekleştirilir.
+RevenueCat aracılığıyla yalnızca aboneliğin aktif olup olmadığı bilgisini alır ve hesabına
+bağlarız.</p>
+
+<h2>5. Reklamlar ve İzleme</h2>
+<p>Ücretsiz planda reklam gösterilebilir. iOS'ta kişiselleştirilmiş reklam için izleme izni
+(App Tracking Transparency) istenir; izin vermezsen yalnızca kişiselleştirilmemiş reklamlar
+gösterilir. Netdaş+ üyelerine reklam gösterilmez.</p>
+
+<h2>6. Veri Saklama ve Silme</h2>
+<p>Verilerini hesabın aktif olduğu sürece saklarız. Hesabını <strong>uygulama içinden</strong>
+Profil → <em>Hesabı Sil</em> adımıyla kalıcı olarak silebilirsin; hesabın ve ilişkili
+verilerin (gönderiler, yorumlar, çalışma kayıtları, planlar) kalıcı olarak kaldırılır ve
+bu işlem geri alınamaz.</p>
+<p>Uygulamaya erişimin yoksa silme talebini
+<a href="hesap-silme.html">hesap silme sayfası</a> üzerinden veya
+<a href="mailto:destek@netdas.app">destek@netdas.app</a> adresine yazarak iletebilirsin.</p>
+
+<h2>7. Çocukların Gizliliği</h2>
+<p>Netdaş 13 yaşından küçük çocuklara yönelik değildir ve bilerek bu yaş grubundan kişisel
+veri toplamayız. 13 yaşından küçük bir kullanıcıya ait veri topladığımızı fark edersek
+kaydı sileriz.</p>
+
+<h2>8. Haklarınız</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuat kapsamında
+verilerine erişme, düzeltilmesini, güncellenmesini veya silinmesini talep etme ve işlemeye
+itiraz etme hakkına sahipsin. Taleplerini
+<a href="mailto:destek@netdas.app">destek@netdas.app</a> adresine iletebilirsin.</p>
+
+<h2>9. Güvenlik</h2>
+<p>Veriler aktarım sırasında TLS ile şifrelenir ve sunucu tarafında satır düzeyinde erişim
+kuralları (Row Level Security) ile korunur; her kullanıcı yalnızca kendi verisine ve
+kendisine açık olan topluluk içeriğine erişebilir.</p>
+
+<h2>10. Değişiklikler ve İletişim</h2>
+<p>Bu Gizlilik Politikası'nı zaman zaman güncelleyebiliriz. Önemli bir değişiklik olduğunda
+uygulama içinden bilgilendiririz. Soruların için
+<a href="mailto:destek@netdas.app">destek@netdas.app</a> adresinden bize ulaşabilirsin.</p>
+
+<footer>
+  Netdaş · <a href="mailto:destek@netdas.app">destek@netdas.app</a> ·
+  <a href="hesap-silme.html">Hesap silme</a>
+</footer>
+
+</div>
+</body>
+</html>

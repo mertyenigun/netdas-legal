@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Netdaş — Hesap Silme</title>
+<meta name="description" content="Netdaş hesabını ve verilerini nasıl kalıcı olarak sileceğin, hangi verilerin silindiği ve silme talebinin nasıl iletileceği.">
+<style>
+  :root {
+    --bg: #f8f9fa; --surface: #ffffff; --border: #e8ecef;
+    --text: #1a1d23; --muted: #6b7280; --accent: #1fa89c; --danger: #d14343;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1115; --surface: #1a1d23; --border: #2a2e36;
+      --text: #f3f4f6; --muted: #9ca3af; --accent: #4ed8cc; --danger: #f87171;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 72px; }
+  .brand { font-size: 15px; font-weight: 700; color: var(--accent); letter-spacing: .02em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 10px 0 8px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  h2 { font-size: 19px; margin: 34px 0 10px; }
+  p { margin: 0 0 14px; }
+  ol, ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  .steps {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px 18px 40px; margin: 0 0 18px;
+  }
+  .steps li:last-child { margin-bottom: 0; }
+  .note {
+    border-left: 3px solid var(--danger); background: var(--surface);
+    padding: 14px 16px; border-radius: 0 8px 8px 0; margin: 0 0 18px;
+  }
+  .note p { margin: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 14px; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+  footer {
+    margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 14px;
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 32px 16px 56px; }
+    h1 { font-size: 25px; }
+    table, th, td { font-size: 14px; }
+    th, td { padding: 9px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="brand">Netdaş</div>
+<h1>Hesabını Silme</h1>
+<p class="updated">Son güncelleme: 24 Ekim 2026</p>
+
+<p>Netdaş hesabını ve hesabına bağlı tüm verileri dilediğin zaman kalıcı olarak
+silebilirsin. İki yol var.</p>
+
+<h2>1. Uygulama içinden (önerilen)</h2>
+<ol class="steps">
+  <li>Netdaş uygulamasını aç ve hesabınla giriş yap.</li>
+  <li>Alt menüden <strong>Profil</strong> sekmesine git.</li>
+  <li>Sayfanın altındaki <strong>Hesabı Sil</strong> seçeneğine dokun.</li>
+  <li>Uyarıyı okuyup onayla.</li>
+</ol>
+<p>Hesabın ve verilerin anında silinir, oturumun kapanır.</p>
+
+<h2>2. Uygulamaya erişemiyorsan</h2>
+<p>Telefonunu kaybettiysen ya da giriş yapamıyorsan, hesabının e-posta adresinden
+<a href="mailto:destek@netdas.app?subject=Hesap%20silme%20talebi">destek@netdas.app</a>
+adresine "Hesap silme talebi" konulu bir e-posta gönder. Talebini kimliğini
+doğruladıktan sonra <strong>en geç 30 gün içinde</strong> işleme alırız.</p>
+
+<h2>Silinen veriler</h2>
+<table>
+  <tr><th>Silinir</th><th>Saklanır</th></tr>
+  <tr>
+    <td>
+      Hesap bilgilerin (e-posta, kullanıcı adı, profil)<br>
+      Çalışma kayıtların, serilerin ve puanların<br>
+      Gönderilerin, yorumların ve oda mesajların<br>
+      Planların, konu takibin ve deneme kayıtların<br>
+      Koleksiyon öğelerin ve jeton bakiyen
+    </td>
+    <td>
+      Yasal olarak saklamak zorunda olduğumuz satın alma ve fatura kayıtları,
+      ilgili mevzuatın öngördüğü süre boyunca saklanır. Bu kayıtlar kimliğinle
+      ilişkilendirilmeden tutulur.
+    </td>
+  </tr>
+</table>
+
+<div class="note">
+  <p><strong>Silme işlemi geri alınamaz.</strong> Aynı e-posta ile yeniden kayıt
+  olabilirsin, ancak eski verilerin kurtarılamaz.</p>
+</div>
+
+<h2>Aboneliğin varsa</h2>
+<p>Hesabını silmek aboneliğini <strong>otomatik olarak iptal etmez</strong>. Netdaş+
+aboneliğini satın aldığın mağazadan ayrıca iptal etmen gerekir:</p>
+<ul>
+  <li><strong>iPhone / iPad:</strong> Ayarlar → (Apple Kimliğin) → Abonelikler</li>
+  <li><strong>Android:</strong> Google Play uygulaması → Menü → Abonelikler</li>
+</ul>
+
+<footer>
+  Netdaş · <a href="mailto:destek@netdas.app">destek@netdas.app</a> ·
+  <a href="gizlilik.html">Gizlilik Politikası</a>
+</footer>
+
+</div>
+</body>
+</html>
